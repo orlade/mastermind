@@ -1,0 +1,11 @@
+package internal
+
+type EXTERNAL_issue_assignee string
+type EXTERNAL_issue_closed_by string
+type EXTERNAL_issue_milestone string
+type EXTERNAL_issueSimple_assignee string
+type EXTERNAL_issueSimple_milestone string
+type EXTERNAL_issueSimple_performed_via_github_app string
+type EXTERNAL_issueSimple_user string
+type EXTERNAL_repository_license string
+type EXTERNAL_repository_owner string
