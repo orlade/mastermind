@@ -1,0 +1,14 @@
+# import github.yaml as github.GitHub
+import github
+
+Mastermind:
+    @package="Mastermind"
+    /repos/{owner<:string}/{repo<:string}/issues:
+        GET:
+            | Get issues
+            GitHub <- GET /repos/{owner}/{repo}/issues
+            return ok <: sequence of Issue
+
+    !type Issue:
+        id <: int
+        title <: string
